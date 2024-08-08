@@ -10,11 +10,17 @@ public class Atividade_03 {
 
     int nota = entrada.nextInt();
 
-    entrada.close();
-
-    if(nota >= 50)
+    if(nota >= 60)
       System.out.println("Aprovado!");
     else
-      System.out.println("Reprovado!");
+      System.out.println("NP3!");
+          int nota_NP3 = entrada.nextInt();
+          
+          if (nota_NP3 >= 50) {
+            System.out.println("Aprovado!");            
+          }else
+            System.out.println("Reprovado!");
+
+    entrada.close();
   }
 }
