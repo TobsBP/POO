@@ -1,4 +1,4 @@
-package Atividades;
+package Atividades.Atividade_04;
 
 import java.util.Random;
 import java.util.Scanner;
