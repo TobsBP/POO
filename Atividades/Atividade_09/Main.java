@@ -2,28 +2,22 @@ package Atividades.Atividade_09;
 
 public class Main {
   public static void main(String[] args) {
-    Salgado salgados[] = new Salgado[3];
     Cantina cantina = new Cantina();
-    
+
     cantina.nome = "Cantina do Inatel";
-    
-    for (int i = 0; i < salgados.length; i++)
-      salgados[i] = new Salgado();
 
-    // salgados[0] = new Salgado();
-    salgados[0].nome = "Coxinha";
+    Salgado salgado_01 = new Salgado();
+    Salgado salgado_02 = new Salgado();
+    Salgado salgado_03 = new Salgado();
 
-    // salgados[1] = new Salgado();
-    salgados[1].nome = "Bolo";
+    salgado_01.nome = "Coxinha";
+    salgado_02.nome = "Empada";
+    salgado_03.nome = "Pastel";
 
-    // salgados[2] = new Salgado();
-    salgados[2].nome = "Empada";
-    
-    for (int i = 0; i < salgados.length; i++) 
-      cantina.addSalgado(salgados[i]);
+    cantina.addSalgado(salgado_01);
+    cantina.addSalgado(salgado_02);
+    cantina.addSalgado(salgado_03);
 
-    for (Salgado salgado : salgados)
-      System.out.println(salgado.nome);
-
+    cantina.mostraSalgado();
   }
-} 
+}
