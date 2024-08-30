@@ -1,4 +1,4 @@
-package Atividades.Atividade_10;
+package Atividades.Atividade_11;
 
 public class Empresario {
   String nome;

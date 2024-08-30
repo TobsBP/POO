@@ -1,30 +1,51 @@
 package Atividades.Atividade_10;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
+  public static void main(String[] args) {
+    boolean campo[][];
+    campo = new boolean[2][2];
 
-  public static void main(String args[]) {
+    Random rand = new Random();
 
-    Empresario empresario = new Empresario("Felipe Neto", 33214511);
+    int x = rand.nextInt(2);
+    int y = rand.nextInt(2);
 
-    Musica musica_01 = new Musica("Lier", 4.41);
-    Musica musica_02 = new Musica("Belive", 3.21);
-    Musica musica_03 = new Musica("Enemi", 31.1);
+    for (int i = 0; i < campo.length; i++) {
+      for (int j = 0; j < campo[i].length; j++) {
+        campo[i][j] = false;
+      }
+    }
 
-    Membro membro_01 = new Membro("Luca", "Guitarrista");
-    Membro membro_02 = new Membro("Felipe", "Baterista");
-    Membro membro_03 = new Membro("Matheus", "Cantor");
+    campo[x][y] = true;
 
-    Banda banda = new Banda("Jorges", "Musicazzz");
-    banda.setEmpresario(empresario);
+    Scanner entrada = new Scanner(System.in);
+    boolean cambum = false;
+    int cont = 0;
 
-    banda.addMusica(musica_01);
-    banda.addMusica(musica_02);
-    banda.addMusica(musica_03);
+    while (!cambum) {
+      System.out.print("Digite x: ");
+      int xUser = entrada.nextInt();
 
-    banda.addMembro(membro_01);
-    banda.addMembro(membro_02);
-    banda.addMembro(membro_03);
+      System.out.print("Digite y: ");
+      int yUser = entrada.nextInt();
 
-    banda.mostraInfo();
+      if (campo[xUser][yUser] == true) {
+        System.out.println("Cabum!");
+        cambum = true;
+      } else {
+        System.out.println("Boa");
+        cont++;
+
+        if (cont == 3) {
+          System.out.println("Ganhou!!");
+          break;
+        }
+      }
+    }
+
+    entrada.close();
   }
 }

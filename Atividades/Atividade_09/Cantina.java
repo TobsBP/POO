@@ -15,7 +15,8 @@ public class Cantina {
 
   void mostraSalgado() {
     for (Salgado salgado : salgados) 
-      System.out.println(salgado.nome); 
+      System.out.println(salgado.nome);
+ 
   }
 
 }

@@ -1,4 +1,4 @@
-package Atividades.Atividade_10;
+package Atividades.Atividade_11;
 
 public class Banda {
 
@@ -8,7 +8,7 @@ public class Banda {
     String genero;
     String nome;
 
-    public Banda(String nome, String genero) {
+    Banda(String nome, String genero) {
         this.nome = nome;
         this.genero = genero;
     }
@@ -45,7 +45,7 @@ public class Banda {
         }
     }
 
-    public void setEmpresario(Empresario empresario) {
+    void setEmpresario(Empresario empresario) {
         this.empresario = empresario;
     }
 }
