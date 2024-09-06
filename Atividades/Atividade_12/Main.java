@@ -7,12 +7,12 @@ public class Main{
 
     public static void main(String args[]){
         Cliente cliente1 = new Cliente();
-        cliente1.setNome("Jaum");
-        cliente1.setCpf(123456);
+        cliente1.setNome("Jorge");
+        cliente1.setCpf(1231256);
 
         Cliente cliente2 = new Cliente();
-        cliente2.setNome("Pablito");
-        cliente2.setCpf(123456789);
+        cliente2.setNome("Pedro");
+        cliente2.setCpf(92323);
 
         Cliente[] clientes = new Cliente[2];
         clientes[0] = cliente1;
@@ -23,17 +23,12 @@ public class Main{
         conta.setLimite(500);
         conta.setNumero(1234);
 
-        System.out.println(conta.getSaldo());
+        System.out.println(conta.getNumero());
 
-        conta.deposita(700);
+        conta.setNumero(23);
+        
+        System.out.println(conta.getNumero());
 
-        System.out.println(conta.getSaldo());
-
-        conta.sacar(300);
-
-        System.out.println(conta.getSaldo());
-
-        conta.sacar(800);
     }
 
 }

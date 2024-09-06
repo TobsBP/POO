@@ -11,39 +11,44 @@ public class Conta {
         setClientes(new Cliente[3]);
     }
 
-    //Comportamento de Conta
-    public void sacar(float quantia){
-        if(saldo >= quantia){
+    // Comportamento de Conta
+    public void sacar(float quantia) {
+        if (saldo >= quantia) {
             this.saldo -= quantia;
-        }else{
+        } else {
             System.out.println("Saldo Insuficiente");
         }
     }
 
-    public void deposita(float quantia){
+    public void deposita(float quantia) {
         this.saldo += quantia;
     }
 
-
-    //Getters e Setters
-    public float getSaldo(){
+    // Getters e Setters
+    public float getSaldo() {
         return this.saldo;
     }
-    public float getLimite(){
+
+    public float getLimite() {
         return this.limite;
     }
-    public void setLimite(float limite){
+
+    public void setLimite(float limite) {
         this.limite = limite;
     }
+
     public Cliente[] getClientes() {
         return clientes;
     }
+
     public void setClientes(Cliente[] clientes) {
         this.clientes = clientes;
     }
+
     public int getNumero() {
         return numero;
     }
+
     public void setNumero(int numero) {
         this.numero = numero;
     }
