@@ -9,9 +9,12 @@ public class Main {
       for (int j = 0; j < array[i].length; j++)
         array[i][j] = i + j;
 
-    for (int[] is : array)
-      for (int is1 : is)
-        System.out.println(is1);
+    System.out.print("Matriz: ");
 
+    for (int[] numbers : array)
+      for (int number : numbers)
+        System.out.print(number + ", ");
+
+    System.out.println("End!");
   }
 }
