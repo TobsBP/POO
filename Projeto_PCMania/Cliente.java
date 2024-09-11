@@ -3,13 +3,11 @@ package Projeto_PCMania;
 public class Cliente {
     private String nome;
     private long cpf;
-    private int matricula;
     Computador computadorComprado[] = new Computador[3];
 
     Cliente(String nome, long cpf, int matricula) {
         this.nome = nome;
         this.cpf = cpf;
-        this.matricula = matricula;
     }
 
     public void comprarComputador(Computador computador) {
@@ -42,9 +40,5 @@ public class Cliente {
 
     public long getCpf() {
         return cpf;
-    }
-
-    public int getMatricula() {
-        return matricula;
     }
 }
