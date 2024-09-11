@@ -13,7 +13,7 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         String nome;
         long cpf;
-        
+
         int matricula = 418;
 
         System.out.println("-------------------- Dados --------------------------");
@@ -23,7 +23,7 @@ public class Main {
         System.out.print("Digite seu cpf: ");
         cpf = entrada.nextLong();
 
-        Cliente cliente = new Cliente(nome, cpf, matricula);
+        Cliente cliente = new Cliente(nome, cpf);
 
         computadores[0] = new Computador(matricula, "Positivo");
         computadores[1] = new Computador(1234 + matricula, "Acer");

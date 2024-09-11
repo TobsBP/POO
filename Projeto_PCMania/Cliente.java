@@ -5,7 +5,7 @@ public class Cliente {
     private long cpf;
     Computador computadorComprado[] = new Computador[3];
 
-    Cliente(String nome, long cpf, int matricula) {
+    Cliente(String nome, long cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
