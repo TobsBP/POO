@@ -1,8 +1,8 @@
-package Projeto_PCMania;
+package PCMania;
 
 public class SistemaOperacional {
-    private String nome;
-    private int tipo;
+    public String nome;
+    public int tipo;
 
     SistemaOperacional(String nome, int tipo){
         this.nome = nome;

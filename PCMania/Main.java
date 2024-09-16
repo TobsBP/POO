@@ -1,4 +1,4 @@
-package Projeto_PCMania;
+package PCMania;
 
 import java.util.Scanner;
 

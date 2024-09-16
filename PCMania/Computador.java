@@ -1,11 +1,11 @@
-package Projeto_PCMania;
+package PCMania;
 
 public class Computador {
     SistemaOperacional sistemaOperacional;
     HardwareBasico hardwareBasico[] = new HardwareBasico[3];
     MemoriaUSB memoriaUSB;
-    private String marca;
-    private float preco;
+    public String marca;
+    public float preco;
 
     Computador(int preco, String marca){
         this.marca = marca;

@@ -1,8 +1,8 @@
-package Projeto_PCMania;
+package PCMania;
 
 public class Cliente {
-    private String nome;
-    private long cpf;
+    public String nome;
+    public long cpf;
     Computador computadorComprado[] = new Computador[3];
 
     Cliente(String nome, long cpf) {

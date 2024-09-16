@@ -1,8 +1,8 @@
-package Projeto_PCMania;
+package PCMania;
 
 public class HardwareBasico {
-    private String nome;
-    private float capacidade;
+    public String nome;
+    public float capacidade;
 
     public String getNome() {
         return nome;

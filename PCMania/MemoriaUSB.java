@@ -1,8 +1,8 @@
-package Projeto_PCMania;
+package PCMania;
 
 public class MemoriaUSB {
-    private String nome;
-    private int capacidade;
+    public String nome;
+    public int capacidade;
 
     MemoriaUSB (String nome, int capacidade){
         this.nome = nome;
