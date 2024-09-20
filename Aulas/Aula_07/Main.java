@@ -15,6 +15,6 @@ public class Main {
       for (int number : numbers)
         System.out.print(number + ", ");
 
-    System.out.println("End!");
+    System.out.println("Etnd!");
   }
 }
