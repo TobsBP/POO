@@ -1,20 +1,23 @@
 package Aula_17;
 
-import java.io.FileInputStream;
+// import java.io.FileInputStream;
+// import java.io.FileNotFoundException;
 
 public class Main {
     public static void main(String[] args) {
-        // A exceção tratada não deixa o codigo nem compilar
         try {
             metodo();   
-        } catch (Exception e) {
-            System.out.println("File not found!");
+        } catch (CheckedException e) { // Use CheckedException, que é uma exceção verificada
+            System.out.println("Erro: " + e);
         }
     }
 
-    // Quem chamar é obrigado a fazer um try catch
-    private static void metodo() throws Exception {
-        FileInputStream File = new FileInputStream("arquivo.txt");
-        File.close();
+    private static void metodo() throws CheckedException {
+        // try {
+            // FileInputStream file = new FileInputStream("arquivo.txt");
+        // } catch (FileNotFoundException e) {
+            // Lança a CheckedException com uma mensagem personalizada
+            // throw new CheckedException("Arquivo inexistente!");
+        // }
     }
 }
